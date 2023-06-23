@@ -1,0 +1,101 @@
+.gridLayout{
+    display:grid;
+    grid-template-columns: 355px 355px 355px 355px;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "header_block header_block header_block header_block"
+    "menu_block menu_block . sidebar_block"
+    "main_block main_block main_block main_block"
+    ;
+    height: 800px;
+    row-gap: 20px;
+    justify-items: stretch;
+
+}
+.header{
+    padding: 15px;
+    grid-area: header_block;
+    background-color: aquamarine;
+}
+.menu{
+    padding: 15px;
+    grid-area: menu_block;
+    background-color: rgb(68, 199, 68);
+}
+.main{
+    padding: 15px;
+    grid-area: main_block;
+    background-color: aqua;
+}
+.sidebar{
+    padding:15px;
+    grid-area: sidebar_block;
+    background-color: blue;
+}
+.dot1{
+    height:10cm;
+    width:10cm;
+    background-color: rgb(232, 85, 205);
+    border-radius: 50%;
+    position: relative;
+    bottom:600px;
+    z-index: 4;
+}
+.dot2{
+    height:5cm;
+    width: 5cm;
+    background-color: rgb(254, 10, 10);
+    border-radius: 50%;
+    position: relative;
+    bottom:750px;
+    z-index: 1;
+}
+.dot3{
+    height:5cm;
+    width: 5cm;
+    background-color: red;
+    border-radius: 50%;
+    position: relative;
+    bottom:940px;
+    left:200px;
+
+}
+.dot4{
+    height:50px;
+    width:50px;
+    background-color: black;
+    border-radius: 50%;
+    position: relative;
+    bottom:1250px;
+    left:95px;
+    z-index: 5;
+}
+.dot5{
+    height:50px;
+    width: 50px;
+    background-color: black;
+    border-radius: 50%;
+    position: relative;
+    bottom:1300px;
+    left:230px;
+    z-index:5;
+}
+.dot6{
+    height: 150px;
+    width: 250px;
+    background-color: red;
+    border-radius: 50%;
+    position:relative;
+    bottom:1270px;
+    left:70px;
+    z-index: 5;
+}
+@media(max-width:768) {
+    .gridLayout{
+        grid-auto-rows: auto;
+        align-content: center;
+    }
+    
+
+    
+}
